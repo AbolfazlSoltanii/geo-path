@@ -1,13 +1,16 @@
-import {type FC} from "react";
+import { type FC } from "react";
+import MapView from "./features/map/MapView.tsx";
 
 const App: FC = () => {
-    return (
-        <div className="relative w-full h-screen">
-            <div className="text-2xl p-4 z-10 relative">
-                Welcome into GeoPath
-            </div>
-        </div>
-    );
+  return (
+    <div className={"flex"}>
+      <div className={"flex-1/4"}></div>
+
+      <div className={"flex-3/4"}>
+        <MapView />
+      </div>
+    </div>
+  );
 };
 
 export default App;
