@@ -1,0 +1,53 @@
+.search-results-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+}
+
+.search-results-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.search-results-scrollbar::-webkit-scrollbar-track {
+  border-radius: 9999px;
+  margin-block: 8px;
+}
+
+.search-results-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background-color 160ms ease;
+}
+
+.search-results-scrollbar--light {
+  scrollbar-color: #6366f1 #e2e8f0;
+}
+
+.search-results-scrollbar--light::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
+.search-results-scrollbar--light::-webkit-scrollbar-thumb {
+  background-color: #6366f1;
+}
+
+.search-results-scrollbar--light::-webkit-scrollbar-thumb:hover {
+  background-color: #4f46e5;
+}
+
+.search-results-scrollbar--dark {
+  scrollbar-color: #818cf8 #1e293b;
+}
+
+.search-results-scrollbar--dark::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.search-results-scrollbar--dark::-webkit-scrollbar-thumb {
+  background-color: #818cf8;
+}
+
+.search-results-scrollbar--dark::-webkit-scrollbar-thumb:hover {
+  background-color: #a5b4fc;
+}
+
