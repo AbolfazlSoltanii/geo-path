@@ -1,6 +1,6 @@
 import { type ChangeEvent, type FC } from "react";
 import SearchIcon from "@mui/icons-material/Search";
-import type { ThemeMode } from "../types";
+import type { ThemeMode } from "../types.ts";
 
 interface SearchInputProps {
   search: string;
@@ -18,13 +18,15 @@ const SearchInput: FC<SearchInputProps> = ({
   onSearchClick,
 }) => {
   return (
-    <div className="relative mt-5">
+    <div className="relative">
       <input
         type="text"
         placeholder={"مثلاً: تهران، میدان آزادی"}
         value={search}
         disabled={isLoading}
-        onChange={(e: ChangeEvent<HTMLInputElement>) => onSearchChange(e.target.value)}
+        onChange={(e: ChangeEvent<HTMLInputElement>) =>
+          onSearchChange(e.target.value)
+        }
         dir="rtl"
         className={`w-full rounded-2xl border py-3 pr-5 pl-12 text-right text-sm transition outline-none placeholder:opacity-100 focus:ring-0 ${
           theme === "dark"
@@ -39,7 +41,9 @@ const SearchInput: FC<SearchInputProps> = ({
         aria-label="جستجو"
         title="جستجو"
         className={`absolute inset-y-0 end-2 my-auto inline-flex items-center justify-center rounded-full p-1 transition-colors ${
-          isLoading ? "cursor-not-allowed opacity-40" : "cursor-pointer opacity-100"
+          isLoading
+            ? "cursor-not-allowed opacity-40"
+            : "cursor-pointer opacity-100"
         }`}
       >
         <SearchIcon
@@ -56,4 +60,3 @@ const SearchInput: FC<SearchInputProps> = ({
 };
 
 export default SearchInput;
-

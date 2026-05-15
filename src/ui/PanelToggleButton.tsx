@@ -1,6 +1,6 @@
 import { type FC } from "react";
 import KeyboardTabIcon from "@mui/icons-material/KeyboardTab";
-import type { ThemeMode } from "../types";
+import type { ThemeMode } from "../features/search/types.ts";
 
 interface PanelToggleButtonProps {
   showPanel: boolean;
@@ -34,4 +34,3 @@ const PanelToggleButton: FC<PanelToggleButtonProps> = ({
 };
 
 export default PanelToggleButton;
-

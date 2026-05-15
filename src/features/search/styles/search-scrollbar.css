@@ -1,6 +1,5 @@
 .search-results-scrollbar {
   scrollbar-width: thin;
-  scrollbar-gutter: stable;
 }
 
 .search-results-scrollbar::-webkit-scrollbar {
