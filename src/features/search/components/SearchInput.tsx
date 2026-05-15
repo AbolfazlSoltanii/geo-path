@@ -1,6 +1,6 @@
 import { type ChangeEvent, type FC } from "react";
 import SearchIcon from "@mui/icons-material/Search";
-import type { ThemeMode } from "../types";
+import type { ThemeMode } from "../types.ts";
 
 interface SearchInputProps {
   search: string;

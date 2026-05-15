@@ -7,7 +7,7 @@ import RouteIcon from "@mui/icons-material/Route";
 import SidebarHeader from "../ui/SidebarHeader.tsx";
 import type { ThemeMode } from "../features/search/types.ts";
 import SearchPanel from "../features/search/SearchPanel.tsx";
-import PanelToggleButton from "../features/search/components/PanelToggleButton.tsx";
+import PanelToggleButton from "../ui/PanelToggleButton.tsx";
 import type { Location } from "../interfaces/search.ts";
 
 interface SidebarProps {
@@ -111,12 +111,14 @@ const Sidebar = ({ onSelectedLocationChange }: SidebarProps) => {
           />
         </Tabs>
 
-        {activeTab === "search" && (
-          <SearchPanel
-            theme={theme}
-            onSelectedLocationChange={onSelectedLocationChange}
-          />
-        )}
+        <div>
+          {activeTab === "search" && (
+            <SearchPanel
+              theme={theme}
+              onSelectedLocationChange={onSelectedLocationChange}
+            />
+          )}
+        </div>
       </div>
 
       <PanelToggleButton

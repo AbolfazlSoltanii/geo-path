@@ -17,7 +17,7 @@ const SidebarHeader = ({
   title,
 }: SearchHeaderProps) => {
   return (
-    <div className={`shrink-0 rounded-3xl ps-5 pt-5 shadow-lg`}>
+    <div className={`shrink-0 rounded-3xl ps-5 pt-5`}>
       <div className="flex items-start justify-between gap-3">
         <div className={"flex-1"}>
           <h2

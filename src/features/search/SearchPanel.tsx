@@ -1,7 +1,7 @@
 import { type Dispatch, type FC, type SetStateAction, useState } from "react";
 
 import type { Location, SearchResult } from "../../interfaces/search";
-import SearchResults from "./components/SearchResults";
+import SearchResults from "./components/SearchResults.tsx";
 import type { ThemeMode } from "./types";
 import SearchInput from "./components/SearchInput.tsx";
 import { searchPlace } from "../../services/helper.ts";
